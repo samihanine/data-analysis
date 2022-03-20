@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js"></script>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #e8fffe;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            width: 100vw;
+            font-family: 'Avenir';
+        }
+
+        .left {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding: 20px;
+            height: 100vh;
+        }
+
+        #myChart {
+            height: calc(30vh);
+        }
+
+        #container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+            align-items: center;
+        }
+
+        #container > div {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            border: solid 1px grey;
+            padding: 20px;
+            border-radius: 20px;
+            font-weight: 700;
+            
+            color: black;
+            width: fit-content;
+        }
+
+        span {
+            display: flex;
+            gap: 20px;
+        }
+        select {
+            padding: 5px;
+        }
+    </style>
+    
+</head>
+<body>
+    <div class="left">
+        <h2>Tailles des clusters</h2>
+
+        <span>
+            <label>Source des données</label>
+            <select id="data">
+                <option value="0">Elèves</option>
+                <option value="1">Sondage de masse</option>
+            </select>
+        </span>
+        <span>
+            <label>Type de graphique</label>
+            <select id="type">
+                <option value="doughnut">Donut</option>
+                <option value="bar">Bar</option>
+                <option value="pie">Camenbert</option>
+            </select>
+        </span>
+        <span>
+            <label>Seuil</label>
+            <input id="seuil" type="number" />
+        </span>
+        
+        <div id="chartReport"></div>
+    </div>
+
+    
+    <div id="container"></div>
+    
+    <script src="script/graph.js"></script>
+    <script src="script/data.js"></script>
+    <script src="script/coloration.js"></script>
+    <script src="script/cluster.js"></script>
+    <script src="script/display.js"></script>
+    <script src="script/kmeans.js"></script>
+
+    <script src="script/index.js"></script>
+</body>
+</html>

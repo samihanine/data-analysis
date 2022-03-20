@@ -1,0 +1,74 @@
+{
+    "id": "nom",
+    "seuil": 11,
+    "metriques": [
+        {
+            "attribut": "os",
+            "poids": 5,
+            "metriques": [
+                {
+                    "a": "macos",
+                    "b": "windows",
+                    "poids": 3
+                },
+                {
+                    "a": "macos",
+                    "b": "linux",
+                    "poids": 1
+                },
+                {
+                    "a": "linux",
+                    "b": "windows",
+                    "poids": 2
+                }
+            ]
+        },
+        {
+            "attribut": "permis",
+            "poids": 2
+        },
+        {
+            "attribut": "web",
+            "poids": 5
+        },
+        {
+            "attribut": "trajet",
+            "poids": 3
+        },
+        {
+            "attribut": "telephone",
+            "poids": 2
+        },
+        {
+            "attribut": "projet",
+            "poids": 5,
+            "metriques": [
+                {
+                    "a": "Ecole d'ingénieur",
+                    "b": "Insertion Professionnelle",
+                    "poids": 3
+                },
+                {
+                    "a": "Licence/Masters",
+                    "b": "Insertion Professionnelle",
+                    "poids": 2
+                },
+                {
+                    "a": "Ecole d'ingénieur",
+                    "b": "Licence/Masters",
+                    "poids": 1
+                }
+            ]
+            
+        },
+        {
+            "attribut": "covid",
+            "poids": 2
+        }
+        ,
+        {
+            "attribut": "stage",
+            "poids": 4
+        }
+    ]
+}

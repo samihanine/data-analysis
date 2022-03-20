@@ -1,0 +1,41 @@
+{
+    "id": "",
+    "seuil": 12,
+    "metriques": [
+        {
+            "_comment": "Age",
+            "attribut": "Q1",
+            "poids": 3
+        },
+        {
+            "_comment": "Genre",
+            "attribut": "Q2",
+            "poids": 2
+        },
+        {
+            "_comment": "Country",
+            "attribut": "Q3",
+            "poids": 2
+        },
+        {
+            "_comment": "Study",
+            "attribut": "Q4",
+            "poids": 1
+        },
+        {
+            "_comment": "Job",
+            "attribut": "Q5",
+            "poids": 2
+        },
+        {
+            "_comment": "Experience",
+            "attribut": "Q6",
+            "poids": 6
+        },
+        {
+            "_comment": "Language",
+            "attribut": "Q8",
+            "poids": 2
+        }
+    ]
+}
