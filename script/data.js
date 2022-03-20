@@ -5,15 +5,17 @@ class Data {
 
     static async load() {
         const files = [
-            ["../json/person.json", "../json/metriques.json"],
-            ["../json/survey.json", "../json/metriques_survey.json"]
+            ["person.json", "metriques.json"],
+            ["survey.json", "metriques_survey.json"]
         ]
 
+        const path = "http://samihanine.github.io/data-analysis/json/"
+        //const path = "../json/"
         for(const file of files) {
-            const response1 = await fetch(file[0]);
+            const response1 = await fetch(path + file[0]);
             const data = await response1.json();
         
-            const response2 = await fetch(file[1]);
+            const response2 = await fetch(path + file[1]);
             const metrique = await response2.json();
 
             Data.source.push({
