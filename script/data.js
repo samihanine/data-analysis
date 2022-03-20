@@ -9,7 +9,7 @@ class Data {
             ["survey.json", "metriques_survey.json"]
         ]
 
-        const path = "http://samihanine.github.io/data-analysis/json/"
+        const path = "https://samihanine.github.io/data-analysis/json/"
         //const path = "../json/"
         for(const file of files) {
             const response1 = await fetch(path + file[0]);
